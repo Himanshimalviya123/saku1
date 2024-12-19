@@ -135,6 +135,22 @@ int main()
         
     }
 }
+#include <iostream>
+using namespace std;
+int main()
+{
+    int arr[]={70,50,40,50,60};
+    int min=arr[3];
+    for(int i=1;i<5;++i)
+    {
+        if(arr[i]<min)
+        {
+            min=arr[i];
+            
+        }
+    }
+    cout<<min;
+}
 }
  
  
