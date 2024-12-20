@@ -135,6 +135,7 @@ int main()
         
     }
 }
+// <===================================array starts==============================>
 #include <iostream>
 using namespace std;
 int main()
@@ -199,6 +200,58 @@ int main()
             cout<<arr[i];
         }
     }
+}
+}
+// <=============================unique======================>
+#include <iostream>
+using namespace std;
+int main()
+{
+    int arr[]={1,2,7,1,8,7,1,5,2,6};
+    for(int i=0;i<10;++i)
+    {
+    bool dup=false;
+    
+        for(int j=i+1;j<10;++j)
+        {
+        if(arr[i]==arr[j] && arr[i]!=-1 )
+        {
+            
+            arr[j]=-1;
+            dup=true;
+        }
+    }
+
+if(!dup && arr[i]!=-1)
+{
+    cout<<arr[i];
+}
+}
+}
+// <==============================duplicate=========================>
+#include <iostream>
+using namespace std;
+int main()
+{
+    int arr[]={1,2,7,1,8,7,1,5,2,6};
+    for(int i=0;i<10;++i)
+    {
+    bool dup=false;
+    
+        for(int j=i+1;j<10;++j)
+        {
+        if(arr[i]==arr[j] && arr[i]!=-1 )
+        {
+            
+            arr[j]=-1;
+            dup=true;
+        }
+    }
+
+if(dup )
+{
+    cout<<arr[i];
+}
 }
 }
 }
