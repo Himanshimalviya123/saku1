@@ -313,6 +313,39 @@ int main()
  cout<<"palindrown";
       
 }
+// <======================ascending order========================>
+#include<iostream>
+using namespace std;
+int main()
+{
+    int arr[]={1,2,9,4,5};
+    for(int i=0;i<4;++i)
+        
+        {
+            if(arr[i]>arr[i+1])
+        {
+        cout<<"no"<<endl;
+        return 0;
+    }
+        }
+cout<<"asceding order"<<endl;
+}
+// <==============missing no.===========================>
+#include<iostream>
+using namespace std;
+int main()
+{
+    int arr[]={1,3,5,7,9};
+    for(int i=0;i<5;++i)
+        
+        {
+            if(arr[i+1]-arr[i]>1)
+        {
+        cout<<arr[i]+1;
+    }
+        }
+
+}
 }
  
  
