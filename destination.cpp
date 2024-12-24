@@ -346,6 +346,103 @@ int main()
         }
 
 }
+// <==================find 10 no.==========================>
+#include<iostream>
+using namespace std;
+int main()
+{
+    int arr[]={10,20,5,9,9};
+    for(int i=0;i<5;++i)
+    {
+        if(arr[i]==10)
+        {
+            cout<<"yes";
+            return 0;
+        }
+    }
+                  cout<<"no";
+        
+    
+}
+// <======================keeping first occursion==================>
+#include<iostream>
+using namespace std;
+int main()
+{
+    int arr[]={10,20,5,9,9};
+    for(int i=0;i<5;++i)
+    {
+        for(int j=i+1;j<5;++j)
+        {
+        if(arr[i]==arr[j])
+        {
+          arr[j]=-1;
+        }
+    }
+                 
+    }   
+    for(int i=0;i<5;++i)
+    {
+        if(arr[i]!=-1)
+        {
+            cout<<arr[i];
+        }
+    }
+}
+// <======================keeping all occursion (remove no.of array)==================>
+#include<iostream>
+using namespace std;
+int main()
+{
+
+    int arr[]={10,20,5,9,9};
+    int remov=9;
+    int j=0;
+    for(int i=0;i<5;++i)
+    {
+        
+        if(arr[i]!=remov)
+        {
+          arr[j]=arr[i];
+          j++;
+        }
+    }
+                 
+  
+    for(int i=0;i<j;++i)
+    {
+        
+            cout<<arr[i];
+        
+    }
+}
+// <======================keeping all occursion==================>
+#include<iostream>
+using namespace std;
+int main()
+{
+
+    int arr[]={50,40,80,20,10};
+    int k=2;
+    for(int i=0;i<5;++i)
+    {
+       for( int j=i+1;j<5;++j)
+       {
+           if(arr[j]>arr[i])
+           {
+              int temp;
+              temp=arr[i];
+              arr[i]=arr[j];
+              arr[j]=temp;
+              
+           }
+       }
+       
+    }
+      cout<<arr[k-1];           
+  
+} 
+
 }
  
  
