@@ -442,6 +442,63 @@ int main()
       cout<<arr[k-1];           
   
 } 
+=================at()=================
+#include <iostream>
+using namespace std;
+int main()
+{
+     string txt = "Hello World!";
+     cout << txt.at(0);
+cout<<endl;
+string a="cybrom";
+cout<<a.at(0);
+}
+=====================length()===============
+#include<iostream>
+using namespace std;
+int main()
+{
+//     string txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+// cout << "The length of the txt string is: " << txt.length();
+string a = "himanshimalviya";
+cout << "The length of the txt string is: " << a.length();
+    
+}
+=============================size()=========================
+#include<iostream>
+using namespace std;
+int main()
+{
+    string txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    cout << "The length of the txt string is: " << txt.size();
+cout<<endl;
+string a = "himanshimalviya";
+cout << "The length of the txt string is: " << a.size();
+    
+}
+==============================max-size===========================
+#include<iostream>
+using namespace std;
+int main()
+{
+    string txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    cout << "The length of the txt string is: " << txt.max_size();
+cout<<endl;
+string a = "himanshimalviya";
+cout << "The length of the txt string is: " << a.max_size();
+cout<<endl;
+}
+==============================empty()================
+#include<iostream>
+using namespace std;
+int main()
+{
+    string txt1 = "himanshi";
+string txt2= " cybrom";
+cout << txt1.empty();
+cout << txt2.empty();
+}
+===========================
 
 }
  
