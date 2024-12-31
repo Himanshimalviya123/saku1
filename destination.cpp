@@ -442,6 +442,34 @@ int main()
       cout<<arr[k-1];           
   
 } 
+
+// ========================sum of 2 target no.=====================
+#include<iostream>
+using namespace std;
+int target_sum(int arr[],int n,int target)
+{
+ for(int i=0;i<=n;++i)
+ {
+     for(int j=i+1;j<=n;++j)
+     {
+         if(arr[i]+arr[j]==target)
+         {
+             cout<<i<<j;
+         }
+     }
+ }
+ return 0;
+}
+
+int main()
+{
+    int arr[]={0,4,3,1,6};
+    int n=5;
+    int target=5;
+    target_sum(arr,n,target);
+    
+}
+
 =================at()=================
 #include <iostream>
 using namespace std;
