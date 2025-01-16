@@ -561,6 +561,27 @@ int main()
         cout<<"not";
     }
 }
+# include<iostream>
+using namespace std;
+class A
+{
+    public:virtual void show()
+    {
+        cout<<"parent";
+    }
+};
+class b:public A
+{
+    public:void show()
+    {
+        cout<<"child";
+    }
+};
+int main()
+{
+    A *obj=new b();
+    obj->show();
+}
 }
  
  
